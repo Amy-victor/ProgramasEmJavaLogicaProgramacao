@@ -11,14 +11,16 @@ public class Alg03_IMCClassificacao {
         imc = peso/(altura*altura);
         if (imc<18.5) {
          System.out.printf("IMC: %.2f kg/m²(abaixo do peso)\n",imc);
-        }else if (imc>=18.5 && imc<24.9) {
+        }else if (imc>=18.5 && imc<25) {
             System.out.printf("IMC: %.2f kg/m²(peso normal)\n",imc);
-        }else if (imc>=) {
-                
-            }}
-
-            
-         } 
-        }
+        }else if (imc>=25 && imc<30) {
+           System.out.printf("IMC: %.2f kg/m²(sobrepeso)\n",imc);
+        }else if (imc>=30 && imc<35) {
+            System.out.printf("IMC: %.2f kg/m²(obesidade grau 1)\n",imc);     
+        }else if (imc>=35 && imc<40) {
+            System.out.printf("IMC %.2f kg/m²(obesidade grau 2)\n",imc);
+        }else {
+            System.out.printf("IMC %.2f kg/m²(obesidade grau 3)\n",imc);
+        }  
     }
 }
